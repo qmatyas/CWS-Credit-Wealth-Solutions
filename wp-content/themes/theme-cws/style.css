@@ -20,10 +20,12 @@ html {
 /*********************** Header **************************/
 .header-cws{
     border-bottom: 1px solid #8c8181;
-    box-shadow: -1px 2px 10px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: -1px 2px 10px 1px rgba(0, 0, 0, 0.3) inset;
     background-image: url("assets/img/banner-logo2.png");
     background-repeat: no-repeat;
-    background-size: 100% 190px;
+    background-size: 100% auto;
+    background-position: center;
+
 }
 .banner-social-media{
     height: 50px;
@@ -48,11 +50,11 @@ html {
 .banner-title{
     display: block;
     font-family: Calibri, Arial, sans-serif;
-    font-size: 34px;
+    font-size: 36px;
     color: black;
     letter-spacing: 3px;
     font-weight: normal;
-    margin: 20px 90px 30px 0;
+    margin: 30px 90px 40px 0;
     text-transform: uppercase;
 }
 .container-nav{
@@ -135,8 +137,31 @@ html {
     width: 100%;
 }
 .slider{
-    margin-top: 40px;
+    margin-top: 10px;
 }
+.slick-slider{
+    margin-bottom: 0px !important;
+}
+.img-slider{
+    width: 100%;
+}
+
+.slick-prev:after {
+ background-repeat: no-repeat;
+    background-size: 80px 60px;
+  content: "prev";
+  color: transparent;
+  font-size: 30px;
+}
+@media (min-width: 992px){
+    .slick-next {
+        top: 35%;
+    }
+    .slick-prev:before, .slick-next:before{
+        color: #443434 !important;
+    }
+}
+
 /******************* accueil ******************/
 .block-title{
     font-family: Calibri, Arial, sans-serif;

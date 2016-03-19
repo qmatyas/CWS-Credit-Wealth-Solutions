@@ -6,7 +6,7 @@ cws.slider = {
 		$('.single-item').slick({
 			arrows: true,
       		fade: true,
-      		dots: true
+      		dots: false
 		});
 	}
 };
