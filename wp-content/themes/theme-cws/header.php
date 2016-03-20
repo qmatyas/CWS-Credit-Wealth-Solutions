@@ -29,11 +29,11 @@
 			 		</div>
 			 	</div>
 			 	<!-- <img class="logo-cws col-md-2" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_cws.jpg"> -->
-		 		<h1 class="banner-title col-sm-8 col-md-6 col-sm-offset-4 col-md-offset-6 hidden-xs">credit & wealth solutions</h1>
+		 		<h1 class="banner-title hidden-xs">credit & wealth solutions</h1>
 			 	<nav class="navbar">
 				  <div class="container-nav">
 				    <div class="navbar-header">
-				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cws-navbar" aria-expanded="false">
 				        <span class="sr-only">Toggle navigation</span>
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
@@ -42,7 +42,7 @@
 
 				    </div>
 				    
-				    <div class="collapse navbar-collapse">
+				    <div class="collapse navbar-collapse" id="cws-navbar">
 				      <ul class="nav navbar-nav">
 				        <li class="nav-item"><a href="#">Accueil<span class="sr-only">(current)</span></a></li>
 				        <li class="nav-item"><a href="#">qui sommes-nous</a></li>
