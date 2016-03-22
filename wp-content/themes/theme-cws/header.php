@@ -28,7 +28,7 @@
 			 			<a class="media-link" href="http://fr.linkedin.com/"><img class="media-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/linkedin.png" title="linkedin" alt="logo linkedin"></a>
 			 		</div>
 			 	</div>
-			 	<!-- <img class="logo-cws col-md-2" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_cws.jpg"> -->
+			 	<img class="logo-cws" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_cws_crop.png">
 		 		<h1 class="banner-title hidden-xs">credit & wealth solutions</h1>
 			 	<nav class="navbar">
 				  <div class="container-nav">
@@ -44,8 +44,8 @@
 				    
 				    <div class="collapse navbar-collapse" id="cws-navbar">
 				      <ul class="nav navbar-nav">
-				        <li class="nav-item"><a href="#">Accueil<span class="sr-only">(current)</span></a></li>
-				        <li class="nav-item"><a href="#">qui sommes-nous</a></li>
+				        <li class="nav-item"><a href="accueil">Accueil<span class="sr-only">(current)</span></a></li>
+				        <li class="nav-item"><a href="qui-sommes-nous">qui sommes-nous</a></li>
 				        <li class="dropdown">
 				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">entreprises<span class="caret"></span></a>
 				          <ul class="dropdown-menu">
