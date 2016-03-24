@@ -1,4 +1,4 @@
-<?php /* Template Name: about-us*/ ?>
+<?php /* Template Name: about-us  */ ?>
 <?php get_header(); ?>
 <?php the_post(); ?>
 

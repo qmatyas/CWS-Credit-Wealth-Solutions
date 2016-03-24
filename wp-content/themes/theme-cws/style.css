@@ -11,11 +11,13 @@ Version: 1.0
 html {
 	margin-top: 0px !important;
 }
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+@media (min-width: 768px){
+     .row-eq-height {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }   
 }
 .container-lg{
     margin: 0 150px;
@@ -32,6 +34,11 @@ html {
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;*/
+    background: #FFFFFF; 
+    background: -webkit-linear-gradient(left, #FFFFFF , #FFFFFF, #ebe5e6); 
+    background: -o-linear-gradient(right, #FFFFFF, #FFFFFF, #ebe5e6); 
+    background: -moz-linear-gradient(right, #FFFFFF, #FFFFFF, #ebe5e6); 
+    background: linear-gradient(to right, #FFFFFF , #FFFFFF, #ebe5e6); 
 
 }
 .banner-social-media{
@@ -90,7 +97,7 @@ html {
 .logo-cws{
     float: left;
     width: 280px;
-    margin-left: 10px;
+    margin: 8px 0 0 10px;
 }
 .navbar{
     float: right;
@@ -258,8 +265,70 @@ html {
     float: left;
     margin: 25px 10px 0 0;
 }
-
-
+/*************** Entreprises ***************/
+.img-entreprise{
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+.block-img{
+    border-right: 1px solid black;
+}
+.link-entreprise{
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+.link-entreprise>a:link, .contact-cws>a:link{
+    text-decoration: none;
+}
+.link-entreprise>a, .contact-cws>a{
+    color: #000000;
+}
+.contact-cws>a:hover, .link-entreprise>a:hover{
+    color: #bb242b;
+}
+.contact-cws{
+    margin: 0 30px;
+}
+.img-book{
+    width: 150px;
+    display: block;
+    margin: 25px auto 15px;
+}
+.row-finance{
+    border-top: 1px solid black;
+}
+.search-finance{
+    margin: 15px auto 35px;
+}
+.text-finance{
+    margin: 0 35px;
+}
+/************** template page **************/
+.img-template{
+    width: 100%;
+}
+.block-title-template{
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 20px;
+    color: black;
+    letter-spacing: 3px;
+    font-weight: normal;
+    margin: 28px 35px;
+    font-weight: bold;
+}
+.block-img-template{
+    border-bottom: 1px solid black;
+}
+.block-left{
+    border-right: 1px solid black;
+}
+.text-left{
+    margin: 0 35px;
+}
+.contact-entreprise, .block-left{
+    padding: 5px 0;
+}
 
 
 
