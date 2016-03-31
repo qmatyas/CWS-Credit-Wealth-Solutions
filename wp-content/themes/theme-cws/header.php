@@ -49,21 +49,21 @@
 				        <li class="dropdown">
 				          <a href="/Entreprises" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">entreprises<span class="caret"></span></a>
 				          <ul class="dropdown-menu">
-				            <li class="drop-item"><a class="drop-link" href="entreprises">Recherche de Financement complexe</a></li>
+				            <li class="drop-item"><a class="drop-link" href="financement-complexe">Recherche <br>de Financement complexe</a></li>
 				            <li class="drop-item"><a class="drop-link" href="gestion-actifs">gestion d'actifs</a></li>
-				            <li class="drop-item"><a class="drop-link" href="#">banques et institutions financières</a></li>
+				            <li class="drop-item"><a class="drop-link" href="banques-et-institutions-financieres">banques et institutions<br> financières</a></li>
 				          </ul>
 				        </li>
 				        <li class="dropdown">
 				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">particuliers<span class="caret"></span></a>
 				          <ul class="dropdown-menu">
-				            <li class="drop-item"><a class="drop-link" href="#">Recherche de Financement des projets immobiliers</a></li>
-				            <li class="drop-item"><a class="drop-link" href="#">gestion d'actifs financiers</a></li>
-				            <li class="drop-item"><a class="drop-link" href="#">recherche et constitution d'un patrimoine artistique</a></li>
+				            <li class="drop-item"><a class="drop-link" href="financement-projets-immobiliers">Recherche de Financement <br>des projets immobiliers</a></li>
+				            <li class="drop-item"><a class="drop-link" href="gestion-actifs-financiers">gestion d'actifs financiers</a></li>
+				            <li class="drop-item"><a class="drop-link" href="constitution-dun-patrimoine-artistique">recherche et constitution <br>d'un patrimoine artistique</a></li>
 				          </ul>
 				        </li>
-				        <li class="nav-item"><a href="#" title="Nos références">clients & partenaires</a></li>
-				        <li class="nav-item"><a href="#" title="Prendre contact avec le Cabinet">contact</a></li>
+				        <li class="nav-item"><a href="clients-et-partenaires" title="Nos références">clients & partenaires</a></li>
+				        <li class="nav-item"><a href="contact" title="Prendre contact avec le Cabinet">contact</a></li>
 				      </ul>
 				    </div>
 				</nav>

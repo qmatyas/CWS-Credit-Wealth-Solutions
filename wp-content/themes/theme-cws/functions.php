@@ -1,6 +1,10 @@
 <?php 
 show_admin_bar(false);
 
+add_theme_support( 'post-thumbnails' );
+
+include 'includes/cws_metaboxes.php';
+
 function disable_emojis() {
   remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
   remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
@@ -33,3 +37,4 @@ function ay_admin_footer () {
   echo 'Merci d\'avoir fait appel à Quentin MATYAS pour votre site';
 }
 add_filter('admin_footer_text', 'ay_admin_footer');
+

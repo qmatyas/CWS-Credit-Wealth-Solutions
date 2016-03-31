@@ -63,11 +63,11 @@ html {
 }
 .banner-title{
     font-family: Calibri, Arial, sans-serif;
-    font-size: 36px;
+    font-size: 28px;
     color: black;
     letter-spacing: 3px;
     font-weight: normal;
-    margin: 30px 95px 40px 0;
+    margin: 45px 0;
     text-transform: uppercase;
     float: right;
     width: 60%;
@@ -87,17 +87,34 @@ html {
     text-transform: uppercase;
     border-radius: 0px !important;
 }
-@media (min-width: 768px){
+.logo-cws{
+        /*float: left;*/
+        width: 180px;
+        margin: 8px 0 10px;
+    }
+@media (min-width: 970px){
     .navbar{
         float: right;
         background-color: #443434;
         margin-right: 100px;
     }
-}
-.logo-cws{
-    float: left;
-    width: 280px;
-    margin: 8px 0 0 10px;
+    .logo-cws{
+        float: left;
+        width: 250px;
+        margin: 8px 0 10px;
+    }
+    .banner-title{
+        font-family: Calibri, Arial, sans-serif;
+        font-size: 36px;
+        color: black;
+        letter-spacing: 3px;
+        font-weight: normal;
+        margin: 30px 95px 40px 0;
+        text-transform: uppercase;
+        float: right;
+        width: 60%;
+        text-align: right;
+    }
 }
 .navbar{
     float: right;
@@ -268,7 +285,7 @@ html {
 /*************** Entreprises ***************/
 .img-entreprise{
     width: 100%;
-    height: 380px;
+    height: 400px;
     object-fit: cover;
 }
 .block-img{
@@ -317,19 +334,83 @@ html {
     margin: 28px 35px;
     font-weight: bold;
 }
-.block-img-template{
+/*.block-img-template{
     border-bottom: 1px solid black;
 }
 .block-left{
     border-right: 1px solid black;
-}
+}*/
 .text-left{
     margin: 0 35px;
 }
 .contact-entreprise, .block-left{
     padding: 5px 0;
 }
+/************** page clients **************/
+.img-client{
+    width: 100%;
+    height: auto;
+}
 
+/************* page contact **************/
+.section-contact{
+    /*margin: 20px 20px;
+    background-image: url("assets/img/fond_slider1.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;*/
+    background: url(assets/img/fond_slider1.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.title-contact{
+    font-family: Calibri, Verdana, Arial, sans-serif;
+    font-size: 22px;
+    color: black;
+    letter-spacing: 3px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    margin: 35px 35px 0;
+}
+.contact-content{
+    margin: 20px 20px;
+}
+.form-contact{
+    margin: 35px 0 35px;
+}
+.control-label{
+    text-align: left !important;
+}
+.block-title-contact{
+    font-family: Calibri, Verdana, Arial, sans-serif;
+    font-size: 22px;
+    color: black;
+    letter-spacing: 3px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 35px;
+}
+.contact-btn{
+    display: block;
+    text-align: center;
+}
+.section-formulaire{
+    /*background-image: url("assets/img/fond_contact_bas.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;*/
+    background: url(assets/img/fond_contact_bas.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 
 
