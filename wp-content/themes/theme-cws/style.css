@@ -401,10 +401,6 @@ html {
     text-align: center;
 }
 .section-formulaire{
-    /*background-image: url("assets/img/fond_contact_bas.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;*/
     background: url(assets/img/fond_contact_bas.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;

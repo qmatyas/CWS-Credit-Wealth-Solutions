@@ -1,6 +1,6 @@
 <?php
 /**
- * CPT for offres
+ * Metaboxes
  *
  * @author  Quentin MATYAS
  */
@@ -23,13 +23,21 @@ class qmPage extends qmCPT{
   public function init(){
     if ($_GET['post'] == $this->get_id_by_slug('accueil')){
       $this->addMetaBoxes('cws-intro', 'Editez la page Accueil');
+    } elseif ($_GET['post'] == $this->get_id_by_slug('qui-sommes-nous')){
+      $this->addMetaBoxes('cws-about', 'Editez la colonne gauche');
+      $this->addMetaBoxes('cws-about-right', 'Editez la colonne droite');
+      }
 
-    }
     $this->addField('cws_intro_left', 'credit & wealth solutions :', 'cws-intro', 'wysiwyg');
     $this->addField('cws_intro_right', 'Texte droit :', 'cws-intro', 'wysiwyg');
+
+    $this->addField('cws_about_top', 'Texte haut :', 'cws-about', 'wysiwyg');
+    $this->addField('cws_about_middle', 'Texte milieu :', 'cws-about', 'wysiwyg');
+    $this->addField('cws_about_bottom', 'Texte bas :', 'cws-about', 'wysiwyg');
+    $this->addField('cws_about_right', 'Texte :', 'cws-about-right', 'wysiwyg');
   }
 
-  public static function get_id_by_slug($page_slug) {
+  public static function get_id_by_slug($page_slug){
     $page = get_page_by_path($page_slug);
       if ($page) {
         return $page->ID;
@@ -43,8 +51,8 @@ class qmPage extends qmCPT{
       $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
       if( !isset( $post_id ) ) return;
 
-      $homepgname = get_the_title($post_id);
-      if($homepgname == 'Accueil'){ 
+      $pagename = get_the_title($post_id);
+      if($pagename == 'Accueil' || $pagename == 'Qui sommes-nous'){ 
         remove_post_type_support('page', 'editor');
       }
 
