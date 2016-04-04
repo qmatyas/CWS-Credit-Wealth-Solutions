@@ -130,9 +130,9 @@ html {
     background-color: #443434;
     margin-top: -5px;
 }
-/*.dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu {
     display: block;
-}*/
+}
 .dropdown-menu>li>a{
     color: white !important;
     text-align: left;
@@ -346,12 +346,22 @@ html {
 .contact-entreprise, .block-left{
     padding: 5px 0;
 }
+
 /************** page clients **************/
 .img-client{
     width: 100%;
     height: auto;
 }
-
+/**************** page entreprises *************/
+.text-left-bottom{
+    margin: 0 35px 20px;
+}
+.arrow-title-entreprise{
+    width:23px;
+    height: 27px;
+    float: left;
+    margin: 15px 10px 0 0;
+}
 /************* page contact **************/
 .section-contact{
     /*margin: 20px 20px;

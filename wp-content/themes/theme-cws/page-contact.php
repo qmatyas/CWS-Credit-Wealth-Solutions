@@ -7,22 +7,7 @@
 			<h2 class="title-contact">CONTACT</h2>
 			<div class="col-md-6 contact-content">
 				<p>
-					Pour toute demande écrite, veuillez adresser votre courrier à : 
-
-					<br><br>CREDIT & WEALTH SOLUTIONS 
-					<br>21 Boulevard Haussmann 
-					<br>75009 PARIS - FRANCE
-
-					<br><br>Vous pouvez nous contacter par téléphone aux : 
-
-					<br><br>01 60 14 40 98 pour le standard 
-					<br>06 78 63 01 78 pour le mobile 
-					<br>Depuis l'étranger, veuillez entrer l'indicatif +33
-
-					<br><br>Vous pouvez également nous contacter via votre messagerie : 
-
-					<br><br>Pour toute demande d'information : INFO@CREDITWEALTHSOLUTIONS.COM 
-					<br>Pour toute question relative au site internet : POSTMASTER@CREDITWEALTHSOLUTIONS.COM
+					<?php echo nl2br(get_post_meta(get_the_ID(),'cws_contact', true)); ?>
 				</p>
 			</div>
 		</div>

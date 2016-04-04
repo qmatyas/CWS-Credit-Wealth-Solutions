@@ -47,7 +47,7 @@
 				        <li class="nav-item"><a href="accueil">Accueil<span class="sr-only">(current)</span></a></li>
 				        <li class="nav-item"><a href="qui-sommes-nous">qui sommes-nous</a></li>
 				        <li class="dropdown">
-				          <a href="/Entreprises" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">entreprises<span class="caret"></span></a>
+				          <a href="entreprises" class="dropdown-toggle">entreprises<span class="caret"></span></a>
 				          <ul class="dropdown-menu">
 				            <li class="drop-item"><a class="drop-link" href="financement-complexe">Recherche <br>de Financement complexe</a></li>
 				            <li class="drop-item"><a class="drop-link" href="gestion-actifs">gestion d'actifs</a></li>
@@ -55,7 +55,7 @@
 				          </ul>
 				        </li>
 				        <li class="dropdown">
-				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">particuliers<span class="caret"></span></a>
+				          <a href="particuliers" class="dropdown-toggle">particuliers<span class="caret"></span></a>
 				          <ul class="dropdown-menu">
 				            <li class="drop-item"><a class="drop-link" href="financement-projets-immobiliers">Recherche de Financement <br>des projets immobiliers</a></li>
 				            <li class="drop-item"><a class="drop-link" href="gestion-actifs-financiers">gestion d'actifs financiers</a></li>
