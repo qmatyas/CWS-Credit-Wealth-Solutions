@@ -6,6 +6,8 @@
 				</div>
 			</div>
 		</footer>
+	</div> <!-- end div global container -->
+</div> <!-- End div corp -->
 		<script src="<?php echo get_template_directory_uri(); ?>/src/js/jquery.min.js" > </script>
 		<script src="<?php echo get_template_directory_uri(); ?>/src/bootstrap/js/bootstrap.min.js"> </script>
 		<script src="<?php echo get_template_directory_uri(); ?>/assets/slick/slick.min.js"> </script>

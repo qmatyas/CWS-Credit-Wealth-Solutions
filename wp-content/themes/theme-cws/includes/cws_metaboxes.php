@@ -21,7 +21,7 @@ class qmPage extends qmCPT{
   }
 
   public function init(){
-    if ($_GET['post'] == $this->get_id_by_slug('accueil')){
+    if ($_GET['post'] == $this->get_id_by_slug('accueil') || $_GET['post'] == $this->get_id_by_slug('homepage')){
       $this->addMetaBoxes('cws-intro', 'Editez la page Accueil');
     } elseif ($_GET['post'] == $this->get_id_by_slug('qui-sommes-nous')){
       $this->addMetaBoxes('cws-about', 'Editez la colonne gauche');

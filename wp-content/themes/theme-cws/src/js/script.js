@@ -1,6 +1,20 @@
 'use strict';
 var cws = {};
 
+
+// cws.containerlg = {
+//   init: function(){
+//     if(window.matchMedia('(min-width: 1500px)').matches){
+//       $("section > div").removeClass('container-fluid').addClass('container');
+//     }
+//     else {
+//       $("section > div").removeClass('container');
+//     }
+//   }
+// };
+// window.addEventListener('resize', cws.containerlg, false);
+
+
 cws.slider = {
 	init: function(){
 		$('.single-item').slick({
@@ -34,22 +48,8 @@ cws.map = {
     google.maps.event.addDomListener(window, 'load', initialiserCarte);
   }
 };
-
-cws.containerlg = {
-	init: function(){
-		if(window.matchMedia('(min-width: 1200px)').matches){
-			$("section > div").removeClass('container-fluid');
-			$("section > div").addClass('container');
-		}
-		else {
-			
-		}
-	}
-}
-// window.addEventListener('resize', cws.containerlg, false);
-
 $(document).ready(function(){
-	cws.slider.init();
+	// cws.containerlg.init();
+  cws.slider.init();
 	cws.map.init();
-	cws.containerlg.init();
 });

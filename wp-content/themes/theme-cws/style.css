@@ -22,6 +22,17 @@ html {
         display: block;
     }
 }
+
+@media (min-width: 1500px){
+    .global-container{
+        margin: 0 10%;
+        box-shadow: -1px 2px 10px 1px rgba(0, 0, 0, 0.3);
+    }
+    .global-corp{
+        width: 100%;
+        
+    }
+}
 .container-lg{
     margin: 0 150px;
 }
@@ -29,9 +40,7 @@ html {
    padding: 0 !important;
    margin: 0 !important;
 }
-body{
-    margin: 100px 0;
-}
+
 /*********************** Header **************************/
 .header-cws{
     border-bottom: 1px solid #8c8181;
@@ -402,7 +411,7 @@ body{
 }
 .map-contact{
     height: 480px;
-    width: 100%;
+    min-width: 100%;
     position: absolute;
     z-index: -1;
 }
@@ -413,6 +422,11 @@ body{
     min-width: 100%;
     min-height: 480px;
     background-color: black;
+}
+@media (min-width: 1500px){
+    .map-contact, .map-filter{
+        min-width: 80%;
+    }
 }
 .title-contact{
     font-family: Calibri, Verdana, Arial, sans-serif;
