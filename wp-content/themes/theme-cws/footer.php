@@ -10,6 +10,7 @@
 		<script src="<?php echo get_template_directory_uri(); ?>/src/bootstrap/js/bootstrap.min.js"> </script>
 		<script src="<?php echo get_template_directory_uri(); ?>/assets/slick/slick.min.js"> </script>
 		<script src="<?php echo get_template_directory_uri(); ?>/src/js/script.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false&language=fr"></script>
 		<?php wp_footer(); ?>
 	</body>
 </html>

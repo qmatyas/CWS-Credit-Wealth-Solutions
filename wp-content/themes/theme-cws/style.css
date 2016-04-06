@@ -18,6 +18,9 @@ html {
         display: -ms-flexbox;
         display: flex;
     }   
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
 }
 .container-lg{
     margin: 0 150px;
@@ -25,6 +28,9 @@ html {
 .nopadding {
    padding: 0 !important;
    margin: 0 !important;
+}
+body{
+    margin: 100px 0;
 }
 /*********************** Header **************************/
 .header-cws{
@@ -40,6 +46,12 @@ html {
     background: -moz-linear-gradient(right, #FFFFFF, #FFFFFF, #ebe5e6); 
     background: linear-gradient(to right, #FFFFFF , #FFFFFF, #ebe5e6); 
 
+}
+.navbar-xs{
+    width: 100%;
+}
+.nav>li{
+    text-align: left;
 }
 .banner-social-media{
     height: 50px;
@@ -101,7 +113,7 @@ html {
     .logo-cws{
         float: left;
         width: 250px;
-        margin: 8px 0 10px;
+        margin: 10px 15px;
     }
     .banner-title{
         font-family: Calibri, Arial, sans-serif;
@@ -129,9 +141,6 @@ html {
 .drop-item{
     background-color: #443434;
     margin-top: -5px;
-}
-.dropdown:hover .dropdown-menu {
-    display: block;
 }
 .dropdown-menu>li>a{
     color: white !important;
@@ -234,14 +243,14 @@ html {
     font-weight: bold;
 }
 .accueil-content{
-    border-top: solid 1px black;
+    /*border-top: solid 1px black;*/
 }
 .homepage-right, .homepage-left{
     padding: 10px 0 30px;
 }
 .homepage-right{
     background-color: #ebe5e6;
-    border-left: solid 1px black;
+    /*border-left: solid 1px black;*/
 }
 .homepage-left>p, .homepage-right>p{
     margin-left: 15px;
@@ -259,16 +268,15 @@ html {
 }
 .col-about-top{
     padding: 0 80px 40px;
-    border-top: none !important;
+    /*border-top: none !important;*/
 }
 .col-about{
-    padding: 10px 80px 40px;
-    border-top: solid 1px black;
-    
+    padding: 10px 20px 40px;
+    /*border-top: solid 1px black;   */
 }
 .col-about-right{
-    padding: 0 40px !important;
-    border-left: solid 1px black;
+    padding: 10px 20px 40px !important;
+    /*border-left: solid 1px black;*/
 }
 .container-about{
     margin-right: 0 !important;
@@ -281,6 +289,16 @@ html {
     height: 27px;
     float: left;
     margin: 25px 10px 0 0;
+}
+@media (min-width: 992px){
+   .col-about{
+        padding: 10px 70px 40px;
+        /*border-top: solid 1px black;   */
+    } 
+    .col-about-right{
+        padding: 0px 40px !important;
+        /*border-left: solid 1px black;*/
+    }
 }
 /*************** Entreprises ***************/
 .img-entreprise{
@@ -331,7 +349,7 @@ html {
     color: black;
     letter-spacing: 3px;
     font-weight: normal;
-    margin: 28px 35px;
+    margin: 28px 20px;
     font-weight: bold;
 }
 /*.block-img-template{
@@ -341,12 +359,19 @@ html {
     border-right: 1px solid black;
 }*/
 .text-left{
-    margin: 0 35px;
+    margin: 0 20px;
 }
 .contact-entreprise, .block-left{
-    padding: 5px 0;
+    padding: 25px 0;
 }
-
+@media (min-width: 768px){
+    .text-left{
+        margin: 0 35px;
+    }
+    .block-title-template{
+    margin: 10px 35px 25px;
+}
+}
 /************** page clients **************/
 .img-client{
     width: 100%;
@@ -369,11 +394,25 @@ html {
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;*/
-    background: url(assets/img/fond_slider1.png) no-repeat center center fixed; 
+    /*background: url(assets/img/fond_slider1.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover;*/
+}
+.map-contact{
+    height: 480px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.map-filter{
+    position: absolute;
+    z-index: -1;
+    opacity: 0.55;
+    min-width: 100%;
+    min-height: 480px;
+    background-color: black;
 }
 .title-contact{
     font-family: Calibri, Verdana, Arial, sans-serif;
@@ -385,9 +424,13 @@ html {
     font-weight: bold;
     text-align: left;
     margin: 35px 35px 0;
+    color: white;
+    /*position: relative;
+    z-index: 2;*/
 }
 .contact-content{
-    margin: 20px 20px;
+    margin: 15px 20px 10px;
+    color: white;
 }
 .form-contact{
     margin: 35px 0 35px;
@@ -410,7 +453,18 @@ html {
     display: block;
     text-align: center;
 }
+.btn-style{
+    border: none;
+    background-color: #443434;
+    color: #ffffff;
+}
+.btn-style:hover{
+    border: solid 1px #bb242b;
+    background-color: #bb242b;
+    color: #ffffff!important;
+}
 .section-formulaire{
+    padding-bottom: 20px;
     background: url(assets/img/fond_contact_bas.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;

@@ -10,13 +10,13 @@
 		</div>
 		<div class="row row-eq-height">
 			<div class="col-md-8 block-left">
-				<h2 class="block-title-template">RECHERCHE ET CONSTITUTION D'UN PATRIMOINE ARTISTIQUE</h2>
+				<h2 class="block-title-template"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_patrimoine_artistique_title', true)); ?></h2>
 				<p class="text-left">
 					<?php echo nl2br(get_post_meta(get_the_ID(),'cws_patrimoine_artistique', true)); ?>
 				</p>
 			</div>
 			<div class="col-md-4 bg-color contact-entreprise">
-				<h2 class="block-title-template">Espace Entreprise</h2>
+				<h2 class="block-title-template"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_espace_patrimoine_artistique_title', true)); ?></h2>
 				<p class="contact-cws">
 					<?php echo nl2br(get_post_meta(get_the_ID(),'cws_espace_patrimoine_artistique', true)); ?>
 				</p>

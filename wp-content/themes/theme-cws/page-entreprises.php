@@ -4,7 +4,8 @@
 <section class="section-entreprise">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-12 nopadding block-img-template"><img class="img-entreprise" src="<?php echo get_template_directory_uri(); ?>/assets/img/fond_corp_haut.jpg">
+			<?php  $url_entreprises = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>
+			<div class="col-md-12 nopadding block-img-template"><img class="img-entreprise" src="<?php echo $url_entreprises?>">
 			</div>		
 		</div>
 		<div class="row row-eq-height">
