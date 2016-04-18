@@ -89,7 +89,6 @@
 						      </button>
 
 						    </div>
-						    
 						    <div class="collapse navbar-collapse" id="cws-navbar">
 						      <ul class="nav navbar-nav">
 						        <li class="nav-item"><a href="accueil">Accueil<span class="sr-only">(current)</span></a></li>

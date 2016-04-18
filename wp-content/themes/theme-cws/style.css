@@ -45,10 +45,6 @@ html {
 .header-cws{
     border-bottom: 1px solid #8c8181;
     box-shadow: -1px 2px 10px 1px rgba(0, 0, 0, 0.3) inset;
-   /* background-image: url("assets/img/banner-logo2.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;*/
     background: #FFFFFF; 
     background: -webkit-linear-gradient(left, #FFFFFF , #FFFFFF, #ebe5e6); 
     background: -o-linear-gradient(right, #FFFFFF, #FFFFFF, #ebe5e6); 
@@ -117,7 +113,7 @@ html {
     .navbar{
         float: right;
         background-color: #443434;
-        margin-right: 100px;
+        margin-right: 45px;
     }
     .logo-cws{
         float: left;
@@ -130,7 +126,7 @@ html {
         color: black;
         letter-spacing: 3px;
         font-weight: normal;
-        margin: 30px 95px 40px 0;
+        margin: 30px 45px 40px 0;
         text-transform: uppercase;
         float: right;
         width: 60%;
