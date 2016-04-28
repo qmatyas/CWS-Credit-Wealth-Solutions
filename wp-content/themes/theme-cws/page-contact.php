@@ -8,7 +8,7 @@
 		<div class="row map-filter"></div>
 		<div class="row">
 			<h2 class="title-contact"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_contact_title', true)); ?></h2>
-			<div class="col-md-6 contact-content">
+			<div class="contact-content">
 				<p>
 					<?php echo nl2br(get_post_meta(get_the_ID(),'cws_contact', true)); ?>
 				</p>

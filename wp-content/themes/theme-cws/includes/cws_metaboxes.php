@@ -53,7 +53,19 @@ class qmPage extends qmCPT{
       $this->addMetaBoxes('cws-espace-patrimoine-artistique', 'Editez la colonne droite');
       } elseif ($_GET['post'] == $this->get_id_by_slug('contact')){
       $this->addMetaBoxes('cws-contact', 'Editez la section contact');
-      } 
+      } elseif ($_GET['post'] == $this->get_id_by_slug('mentions-legales')){
+        $this->addMetaBoxes('cws-mentions-legales', 'Editez la section mentions légales');
+        $this->addMetaBoxes('cws-site', 'Editez la section site');
+        $this->addMetaBoxes('cws-reclamations', 'Editez la section réclamations');
+        $this->addMetaBoxes('cws-informatique', 'Editez la section loi informatique');
+        $this->addMetaBoxes('cws-parametres', 'Editez la section paramètres');
+      }
+
+    $this->addField('cws_mentions_legales', 'mentions légales :', 'cws-mentions-legales', 'wysiwyg');  
+    $this->addField('cws_site', 'Le site :', 'cws-site', 'wysiwyg');
+    $this->addField('cws_reclamations', 'Réclamations :', 'cws-reclamations', 'wysiwyg');
+    $this->addField('cws_informatique', 'Informatique et libertés :', 'cws-informatique', 'wysiwyg');
+    $this->addField('cws_parametres', 'paramètres et configurations:', 'cws-parametres', 'wysiwyg');
 
     $this->addField('cws_intro_left_title', 'titre colonne gauche :', 'cws-intro', 'text');
     $this->addField('cws_intro_left', 'credit & wealth solutions :', 'cws-intro', 'wysiwyg');
@@ -143,7 +155,8 @@ class qmPage extends qmCPT{
         || $pagename == 'Banques et institutions financières' 
         || $pagename == 'Gestion actifs financiers' || $pagename == "Constitution patrimoine artistique"
         || $pagename == 'Contact' || $pagename == 'Financement complexe'
-        || $pagename == 'Financement projets immobiliers' || $pagename == 'Gestion actifs'){ 
+        || $pagename == 'Financement projets immobiliers' || $pagename == 'Gestion actifs'
+        || $pagename == 'Mentions légales'){ 
         remove_post_type_support('page', 'editor');
       }
 

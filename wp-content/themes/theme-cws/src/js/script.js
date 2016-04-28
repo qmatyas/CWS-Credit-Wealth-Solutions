@@ -14,6 +14,17 @@ var cws = {};
 // };
 // window.addEventListener('resize', cws.containerlg, false);
 
+cws.menuxs = {
+  init: function(){
+    if(window.matchMedia('(min-width: 768px)').matches){
+      $("nav").removeClass('navbar-xs');
+    } else {
+      $("nav").addClass('navbar-xs');
+      $("<br>").insertBefore('.media-top');
+    }
+  }
+};
+window.addEventListener('resize', cws.menuxs, false);
 
 cws.slider = {
 	init: function(){
@@ -50,6 +61,7 @@ cws.map = {
 };
 $(document).ready(function(){
 	// cws.containerlg.init();
+  cws.menuxs.init();
   cws.slider.init();
 	cws.map.init();
 });

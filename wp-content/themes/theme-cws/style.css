@@ -52,8 +52,21 @@ html {
     background: linear-gradient(to right, #FFFFFF , #FFFFFF, #ebe5e6); 
 
 }
+.social-media{
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
 .navbar-xs{
     width: 100%;
+    margin-bottom: 0px !important;
+}
+@media (min-width: 768px){
+
 }
 .nav>li{
     text-align: left;
@@ -66,15 +79,7 @@ html {
     width: 18px;
     height: 18px;
 }
-.social-media{
-    text-align: center;
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 10px;
-    letter-spacing: 1px;
-    padding-top: 15px;
-    text-transform: uppercase;
-}
+
 .media-link{
     margin-left: 7px;
 }
@@ -107,8 +112,17 @@ html {
 .logo-cws{
         /*float: left;*/
         width: 180px;
-        margin: 8px 0 10px;
+        /*margin: 8px 0 10px;*/
+        display: block;
+        margin: 0 auto;
     }
+@media (min-width: 768px){
+   .logo-cws{
+        float: left;
+        width: 180px;
+        margin: 8px 0 10px;
+    } 
+}
 @media (min-width: 970px){
     .navbar{
         float: right;
@@ -188,12 +202,12 @@ html {
 /******************* footer ********************/
 .footer-cws{
     width: 100%;
-    height: 40px;
+    height: 60px;
     text-align: center;
     background-color: #bb242b;
 }
 .footer-content{
-    margin-top: 10px;
+    margin-top: 20px;
     color: #ffffff;
 }
 .footer-content>a:link, .footer-content>a:hover{
@@ -406,7 +420,7 @@ html {
     background-size: cover;*/
 }
 .map-contact{
-    height: 480px;
+    height: 400px;
     min-width: 100%;
     position: absolute;
     z-index: -1;
@@ -432,7 +446,7 @@ html {
     font-weight: normal;
     text-transform: uppercase;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     margin: 35px 35px 0;
     color: white;
     /*position: relative;
@@ -441,6 +455,7 @@ html {
 .contact-content{
     margin: 15px 20px 10px;
     color: white;
+    text-align: center;
 }
 .form-contact{
     margin: 35px 0 35px;

@@ -73,14 +73,14 @@ data-toggle="dropdown" class="dropdown-toggle">particuliers<span class="caret"><
 			 		<div class="row header-cws">
 				 		<div class="banner-social-media">
 					 		<div class="social-media">Rejoignez-nous sur les réseaux sociaux
-					 			<a class="media-link" href="https://www.facebook.com/creditwealthsolutions"><img class="media-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.png" title="facebook" alt="logo facebook"></a>
+					 			<a class="media-top media-link" href="https://www.facebook.com/creditwealthsolutions"><img class="media-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.png" title="facebook" alt="logo facebook"></a>
 					 			<a class="media-link" href="https://twitter.com/"><img class="media-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.png" title="twitter" alt="logo twitter"></a>
 					 			<a class="media-link" href="http://fr.linkedin.com/"><img class="media-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/linkedin.png" title="linkedin" alt="logo linkedin"></a>
 					 		</div>
 					 	</div>
 					 	<a href="accueil"><img class="logo-cws" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_cws_crop.png"></a>
 				 		<h1 class="banner-title hidden-xs">credit & wealth solutions</h1>
-					 	<nav class="navbar">
+					 	<nav class="navbar navbar-xs">
 						  <div class="container-nav">
 						    <div class="navbar-header">
 						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cws-navbar" aria-expanded="false">
