@@ -1,26 +1,16 @@
 'use strict';
 var cws = {};
 
-
-// cws.containerlg = {
-//   init: function(){
-//     if(window.matchMedia('(min-width: 1500px)').matches){
-//       $("section > div").removeClass('container-fluid').addClass('container');
-//     }
-//     else {
-//       $("section > div").removeClass('container');
-//     }
-//   }
-// };
-// window.addEventListener('resize', cws.containerlg, false);
-
 cws.menuxs = {
   init: function(){
     if(window.matchMedia('(min-width: 768px)').matches){
       $("nav").removeClass('navbar-xs');
+      $(".dropdown-entreprise").attr("href","entreprises");
+      $(".dropdown-particulier").attr("href","particuliers");
     } else {
       $("nav").addClass('navbar-xs');
       $("<br>").insertBefore('.media-top');
+      $(".dropdown-toggle").attr("data-toggle", "dropdown");
     }
   }
 };
