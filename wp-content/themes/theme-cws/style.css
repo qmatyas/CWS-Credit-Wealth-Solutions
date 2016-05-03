@@ -423,11 +423,11 @@ html {
     height: 400px;
     min-width: 100%;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
 }
 .map-filter{
     position: absolute;
-    z-index: -1;
+    z-index: 2;
     opacity: 0.55;
     min-width: 100%;
     min-height: 480px;
@@ -456,6 +456,12 @@ html {
     margin: 15px 20px 10px;
     color: white;
     text-align: center;
+    position: relative;
+    z-index: 3;
+}
+.section-formulaire{
+    position: relative;
+    z-index: 3;
 }
 .form-contact{
     margin: 35px 0 35px;
