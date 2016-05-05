@@ -3,15 +3,12 @@
 			<div class="row">
 				<div class="footer-content col-md-12">
 					© 2016 | CWS Credit & Wealth Solutions | 
-					<a href="mentions-legales">
-						<?php if(urlMultilang() == 'fr/' || urlMultilang() == ''){
-								echo "Mentions légales" ;
-							} elseif(urlMultilang() == 'en/'){
-								echo "Legal information";
-							}
-
-						?>
-						
+					
+						<?php if(urlMultilang() == 'fr/' || urlMultilang() == ''): ?>
+								<a href="mentions-legales"> Mentions légales
+						<?php elseif(urlMultilang() == 'en/'): ?>
+								<a href="legal-information"> Legal information
+						<?php endif; ?>
 					</a>
 				</div>
 			</div>

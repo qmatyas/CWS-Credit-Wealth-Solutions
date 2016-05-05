@@ -26,34 +26,34 @@ class qmPage extends qmCPT{
     } elseif ($_GET['post'] == $this->get_id_by_slug('qui-sommes-nous') || $_GET['post'] == $this->get_id_by_slug('about-us')){
       $this->addMetaBoxes('cws-about', 'Editez la colonne gauche');
       $this->addMetaBoxes('cws-about-right', 'Editez la colonne droite');
-      } elseif ($_GET['post'] == $this->get_id_by_slug('entreprises')){
+      } elseif ($_GET['post'] == $this->get_id_by_slug('entreprises') || $_GET['post'] == $this->get_id_by_slug('corporate-section')){
       $this->addMetaBoxes('cws-entreprise-img', 'Choisissez une image');
       $this->addMetaBoxes('cws-entreprises', 'Editez la colonne gauche');
       $this->addMetaBoxes('cws-espace-entreprise', 'Editez la colonne droite');
-      } elseif ($_GET['post'] == $this->get_id_by_slug('particuliers')){
+      } elseif ($_GET['post'] == $this->get_id_by_slug('particuliers') || $_GET['post'] == $this->get_id_by_slug('wealth-section')){
       $this->addMetaBoxes('cws-particuliers', 'Editez les liens');
       $this->addMetaBoxes('cws-espace-patrimoine', 'Editez la colonne droite');
-      } elseif ($_GET['post'] == $this->get_id_by_slug('financement-complexe')){
+      } elseif ($_GET['post'] == $this->get_id_by_slug('financement-complexe') || $_GET['post'] == $this->get_id_by_slug('complex-financing')){
       $this->addMetaBoxes('cws-financement-complexe', 'Editez la colonne gauche');
       $this->addMetaBoxes('cws-espace-financement', 'Editez la colonne droite');
-      } elseif ($_GET['post'] == $this->get_id_by_slug('gestion-actifs')){
+      } elseif ($_GET['post'] == $this->get_id_by_slug('gestion-actifs') || $_GET['post'] == $this->get_id_by_slug('asset-management')){
       $this->addMetaBoxes('cws-actif-entreprise', 'Editez la colonne gauche');
       $this->addMetaBoxes('cws-espace-actif', 'Editez la colonne droite');
-      } elseif ($_GET['post'] == $this->get_id_by_slug('banques-et-institutions-financieres')){
+      } elseif ($_GET['post'] == $this->get_id_by_slug('banques-et-institutions-financieres') || $_GET['post'] == $this->get_id_by_slug('banks-and-financial-institutions')){
       $this->addMetaBoxes('cws-institution-financiere', 'Editez la colonne gauche');
       $this->addMetaBoxes('cws-espace-institution', 'Editez la colonne droite');
-      } elseif ($_GET['post'] == $this->get_id_by_slug('financement-projets-immobiliers')){
+      } elseif ($_GET['post'] == $this->get_id_by_slug('financement-projets-immobiliers')|| $_GET['post'] == $this->get_id_by_slug('estate-funding')){
       $this->addMetaBoxes('cws-projets-immobiliers', 'Editez la colonne gauche');
       $this->addMetaBoxes('cws-espace-immobiliers', 'Editez la colonne droite');
-      } elseif ($_GET['post'] == $this->get_id_by_slug('gestion-actifs-financiers')){
+      } elseif ($_GET['post'] == $this->get_id_by_slug('gestion-actifs-financiers') || $_GET['post'] == $this->get_id_by_slug('wealth-asset-management')){
       $this->addMetaBoxes('cws-actifs-financiers', 'Editez la colonne gauche');
       $this->addMetaBoxes('cws-espace-financier', 'Editez la colonne droite');
-      } elseif ($_GET['post'] == $this->get_id_by_slug('constitution-dun-patrimoine-artistique')){
+      } elseif ($_GET['post'] == $this->get_id_by_slug('constitution-dun-patrimoine-artistique') || $_GET['post'] == $this->get_id_by_slug('investing-in-art')){
       $this->addMetaBoxes('cws-patrimoine-artistique', 'Editez la colonne gauche');
       $this->addMetaBoxes('cws-espace-patrimoine-artistique', 'Editez la colonne droite');
-      } elseif ($_GET['post'] == $this->get_id_by_slug('contact')){
+      } elseif ($_GET['post'] == $this->get_id_by_slug('contact')|| $_GET['post'] == $this->get_id_by_slug('contact-en')){
       $this->addMetaBoxes('cws-contact', 'Editez la section contact');
-      } elseif ($_GET['post'] == $this->get_id_by_slug('mentions-legales')){
+      } elseif ($_GET['post'] == $this->get_id_by_slug('mentions-legales') || $_GET['post'] == $this->get_id_by_slug('legal-information')){
         $this->addMetaBoxes('cws-mentions-legales', 'Editez la section mentions légales');
         $this->addMetaBoxes('cws-site', 'Editez la section site');
         $this->addMetaBoxes('cws-reclamations', 'Editez la section réclamations');
