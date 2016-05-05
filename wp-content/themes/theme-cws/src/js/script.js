@@ -37,7 +37,8 @@ cws.map = {
       var mapOptions = {
         zoom    : 16,
         center  : latlng,
-        mapTypeId : google.maps.MapTypeId.ROADMAP
+        mapTypeId : google.maps.MapTypeId.ROADMAP,
+        disableDefaultUI: true
       };
 
       map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
@@ -50,7 +51,6 @@ cws.map = {
   }
 };
 $(document).ready(function(){
-	// cws.containerlg.init();
   cws.menuxs.init();
   cws.slider.init();
 	cws.map.init();

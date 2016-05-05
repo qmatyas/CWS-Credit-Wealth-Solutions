@@ -7,8 +7,6 @@
 			<div class="row">
 				<div class="col-md-12 col-lg-12 slider single-item">
 					<div><img class="img-slider" src="<?php echo get_template_directory_uri(); ?>/assets/img/fond_slider1.png"></div>
-					<!-- <div><img src="http://placehold.it/1100x324"></div>
-					<div><img src="http://placehold.it/1100x324"></div> -->
 				</div>
 			</div>
 		</div>		       

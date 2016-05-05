@@ -2,7 +2,17 @@
 		<footer class="footer-cws container-fluid">
 			<div class="row">
 				<div class="footer-content col-md-12">
-					© 2016 | CWS Credit & Wealth Solutions | <a href="mentions-legales">Mentions légales</a>
+					© 2016 | CWS Credit & Wealth Solutions | 
+					<a href="mentions-legales">
+						<?php if(urlMultilang() == 'fr/' || urlMultilang() == ''){
+								echo "Mentions légales" ;
+							} elseif(urlMultilang() == 'en/'){
+								echo "Legal information";
+							}
+
+						?>
+						
+					</a>
 				</div>
 			</div>
 		</footer>

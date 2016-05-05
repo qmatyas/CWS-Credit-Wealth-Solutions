@@ -27,15 +27,24 @@
 			 	<div class="container-fluid">
 			 		<div class="row header-cws">
 				 		<div class="banner-social-media">
-					 		<div class="social-media">Rejoignez-nous sur les réseaux sociaux
+				 			
+					 		<div class="social-media">
+					 		<?php if(urlMultilang() == 'fr/' || urlMultilang() == '') : ?>
+					 		Rejoignez-nous sur les réseaux sociaux
+					 		<?php elseif( urlMultilang() == 'en/') : ?>
+					 		JOIN US ON THE SOCIAL NETWORKING SERVICES
+					 	<?php endif; ?>
 					 			<a class="media-top media-link" href="https://www.facebook.com/creditwealthsolutions"><img class="media-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.png" title="facebook" alt="logo facebook"></a>
 					 			<a class="media-link" href="https://twitter.com/"><img class="media-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.png" title="twitter" alt="logo twitter"></a>
 					 			<a class="media-link" href="http://fr.linkedin.com/"><img class="media-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/linkedin.png" title="linkedin" alt="logo linkedin"></a>
+
+					 			<a class="media-lang" href="http://localhost:8888/CWS-Credit-Wealth-Solutions/fr/"><img class="media-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/fr.png" title="français" alt="fr"></a>
+					 			<a class="media-lang" href="http://localhost:8888/CWS-Credit-Wealth-Solutions/en/"><img class="media-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/uk.png" title="english" alt="en"></a>
 					 		</div>
 					 	</div>
 					 	<a href="accueil"><img class="logo-cws" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_cws_crop.png"></a>
 				 		<h1 class="banner-title hidden-xs">credit & wealth solutions</h1>
-					 	<nav class="navbar navbar-xs">
+					 	<nav class="navbar">
 						  <div class="container-nav">
 						    <div class="navbar-header">
 						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cws-navbar" aria-expanded="false">
@@ -47,6 +56,7 @@
 
 						    </div>
 						    <div class="collapse navbar-collapse" id="cws-navbar">
+						    <?php if(urlMultilang() == 'fr/' || urlMultilang() == '') : ?>
 						      <ul class="nav navbar-nav">
 						        <li class="nav-item"><a href="accueil">Accueil<span class="sr-only">(current)</span></a></li>
 						        <li class="nav-item"><a href="qui-sommes-nous">qui sommes-nous</a></li>
@@ -71,6 +81,32 @@
 						        <li class="nav-item"><a href="clients-et-partenaires" title="Nos références">clients & partenaires</a></li>
 						        <li class="nav-item"><a href="contact" title="Prendre contact avec le Cabinet">contact</a></li>
 						      </ul>
+						       <?php elseif( urlMultilang() == 'en/') : ?>
+						       <ul class="nav navbar-nav">
+						        <li class="nav-item"><a href="homepage">Homepage<span class="sr-only">(current)</span></a></li>
+						        <li class="nav-item"><a href="discover-cws">Discover CWS</a></li>
+						        <li class="dropdown">
+						          <a class="dropdown-toggle dropdown-entreprise">Corporate Section<span class="caret"></span></a>
+						          <ul class="dropdown-menu">
+						          	<li class="drop-item"><a class="drop-link visible-xs" href="corporate-section">Corporate section</a></li>
+						            <li class="drop-item"><a class="drop-link" href="complex-financing">Search for complex financing</a></li>
+						            <li class="drop-item"><a class="drop-link" href="asset-management">Consulting for asset management</a></li>
+						            <li class="drop-item"><a class="drop-link" href="banks-and-financial-institutions">Banks and financial institutions</a></li>
+						          </ul>
+						        </li>
+						        <li class="dropdown">
+						          <a class="dropdown-toggle dropdown-particulier">Wealth Section<span class="caret"></span></a>
+						          <ul class="dropdown-menu">
+						          	<li class="drop-item"><a class="drop-link visible-xs" href="wealth-section">Wealth Section</a></li>
+						            <li class="drop-item"><a class="drop-link" href="estate-funding">Search for real estate funding</a></li>
+						            <li class="drop-item"><a class="drop-link" href="wealth-asset-management">Consulting for asset management</a></li>
+						            <li class="drop-item"><a class="drop-link" href="investing-in-art">Investing in Art</a></li>
+						          </ul>
+						        </li>
+						        <li class="nav-item"><a href="clients-and-partners">clients & partners</a></li>
+						        <li class="nav-item"><a href="contact-en">contact</a></li>
+						      </ul>
+			 					<?php endif; ?>
 						    </div>
 						</nav>
 			 		</div>
