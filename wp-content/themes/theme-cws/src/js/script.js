@@ -7,6 +7,8 @@ cws.menuxs = {
       $("nav").removeClass('navbar-xs');
       $(".dropdown-entreprise").attr("href","entreprises");
       $(".dropdown-particulier").attr("href","particuliers");
+      $(".dropdown-corporate").attr("href","corporate-section");
+      $(".dropdown-wealth").attr("href","wealth-section");
     } else {
       $("nav").addClass('navbar-xs');
       $("<br>").insertBefore('.media-top');

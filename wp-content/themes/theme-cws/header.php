@@ -96,7 +96,7 @@
 						        <li class="nav-item"><a href="homepage">Homepage<span class="sr-only">(current)</span></a></li>
 						        <li class="nav-item"><a href="discover-cws">Discover CWS</a></li>
 						        <li class="dropdown">
-						          <a class="dropdown-toggle dropdown-entreprise">Corporate Section<span class="caret"></span></a>
+						          <a class="dropdown-toggle dropdown-corporate">Corporate Section<span class="caret"></span></a>
 						          <ul class="dropdown-menu">
 						          	<li class="drop-item"><a class="drop-link visible-xs" href="corporate-section">Corporate section</a></li>
 						            <li class="drop-item"><a class="drop-link" href="complex-financing">Search for complex financing</a></li>
@@ -105,7 +105,7 @@
 						          </ul>
 						        </li>
 						        <li class="dropdown">
-						          <a class="dropdown-toggle dropdown-particulier">Wealth Section<span class="caret"></span></a>
+						          <a class="dropdown-toggle dropdown-wealth">Wealth Section<span class="caret"></span></a>
 						          <ul class="dropdown-menu">
 						          	<li class="drop-item"><a class="drop-link visible-xs" href="wealth-section">Wealth Section</a></li>
 						            <li class="drop-item"><a class="drop-link" href="estate-funding">Search for real estate funding</a></li>
