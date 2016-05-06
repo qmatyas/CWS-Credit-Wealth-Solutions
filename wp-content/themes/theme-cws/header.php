@@ -38,8 +38,18 @@
 					 			<a class="media-link" href="https://twitter.com/"><img class="media-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.png" title="twitter" alt="logo twitter"></a>
 					 			<a class="media-link" href="http://fr.linkedin.com/"><img class="media-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/linkedin.png" title="linkedin" alt="logo linkedin"></a>
 
-					 			<a class="media-lang" href="http://localhost:8888/CWS-Credit-Wealth-Solutions/fr/"><img class="media-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/fr.png" title="français" alt="fr"></a>
-					 			<a class="media-lang" href="http://localhost:8888/CWS-Credit-Wealth-Solutions/en/"><img class="media-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/uk.png" title="english" alt="en"></a>
+					 	<?php 
+			 				$home_url = get_home_url(); 
+			 				if (preg_match('^/fr^', $home_url) == true){
+			 					$home_url_fr = $home_url;
+			 					$home_url_en = preg_replace('^/fr^', '/en/', $home_url);
+			 				} elseif (preg_match('^/en^', $home_url) == true) {
+			 					$home_url_fr = preg_replace('^/en^', '/fr/', $home_url);
+			 					$home_url_en = $home_url;
+			 				}
+			 			?>
+					 			<a class="media-lang" href="<?php echo $home_url_fr; ?>"><img class="media-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/fr.png" title="français" alt="fr"></a>
+					 			<a class="media-lang" href="<?php  echo $home_url_en; ?>"><img class="media-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/uk.png" title="english" alt="en"></a>
 					 		</div>
 					 	</div>
 					 	<a href="accueil"><img class="logo-cws" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_cws_crop.png"></a>
