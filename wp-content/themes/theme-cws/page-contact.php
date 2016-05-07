@@ -20,6 +20,7 @@
 <?php 
 
 $form_send = false;
+$mail_recep = get_post_meta(get_the_ID(),'cws_contact_mail_reception', true);
 
 if(isset($_POST['message']) AND isset($_POST['email'])){
 	$objet = $_POST['objet'];
@@ -29,7 +30,7 @@ if(isset($_POST['message']) AND isset($_POST['email'])){
     	$mail .= $key . ' : ' . $value . PHP_EOL;
     }
 
-    if(wp_mail('qmatyas@gmail.com', $objet, $mail)){
+    if( wp_mail($mail_recep, $objet, $mail)){
     	$form_send = true;
     }
 }
@@ -38,32 +39,32 @@ if(isset($_POST['message']) AND isset($_POST['email'])){
 <section class="section-formulaire">
 	<div class="container-fluid">
 		<div class="row">
-			<h2 class="block-title-contact">Formulaire de contact</h2>
+			<h2 class="block-title-contact"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_contact_title', true)); ?></h2>
 			<div class="col-md-12">
 				<?php if($form_send) : ?>
 					<div class="alert alert-success" role="alert">Merci de votre intérêt. Nous vous recontacterons très prochainement.</div>
 				<?php else : ?>
 					<form class="form-horizontal form-contact" action="" method="post">
 						<div class="form-group">
-						    <label for="inputName" class="col-sm-2 col-sm-offset-1 control-label">Nom & Prenom | Entreprise</label>
+						    <label for="inputName" class="col-sm-2 col-sm-offset-1 control-label"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_contact_name', true)); ?></label>
 						    <div class="col-sm-6">
 						      <input type="text" class="form-control" id="inputName" name="contact_name">
 						    </div>
 						</div>
 						<div class="form-group">
-							<label for="inputEmail" class="col-sm-2 col-sm-offset-1 control-label">Votre Email</label>
+							<label for="inputEmail" class="col-sm-2 col-sm-offset-1 control-label"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_contact_email', true)); ?></label>
 							<div class="col-sm-6">
 							  <input type="email" id="inputEmail" name="email" class="form-control">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="inputObjet" class="col-sm-2 col-sm-offset-1 control-label">Objet</label>
+							<label for="inputObjet" class="col-sm-2 col-sm-offset-1 control-label"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_contact_object', true)); ?></label>
 							<div class="col-sm-6">
 							  <input type="text" id="inputObjet" name="objet" class="form-control">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="inputMessage" class="col-sm-2 col-sm-offset-1 control-label">Votre message</label>
+							<label for="inputMessage" class="col-sm-2 col-sm-offset-1 control-label"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_contact_msg', true)); ?></label>
 							<div class="col-sm-6">
 							  <textarea class="form-control" rows="5" id="inputMessage" name="message"></textarea>
 							</div>

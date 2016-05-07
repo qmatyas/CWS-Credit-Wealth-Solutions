@@ -53,6 +53,7 @@ class qmPage extends qmCPT{
       $this->addMetaBoxes('cws-espace-patrimoine-artistique', 'Editez la colonne droite');
       } elseif ($_GET['post'] == $this->get_id_by_slug('contact')|| $_GET['post'] == $this->get_id_by_slug('contact-en')){
       $this->addMetaBoxes('cws-contact', 'Editez la section contact');
+      $this->addMetaBoxes('cws-contact-form', 'Editez le formulaire');
       } elseif ($_GET['post'] == $this->get_id_by_slug('mentions-legales') || $_GET['post'] == $this->get_id_by_slug('legal-information')){
         $this->addMetaBoxes('cws-mentions-legales', 'Editez la section mentions légales');
         $this->addMetaBoxes('cws-site', 'Editez la section site');
@@ -132,7 +133,12 @@ class qmPage extends qmCPT{
 
     $this->addField('cws_contact_title', 'Titre :', 'cws-contact', 'text');
     $this->addField('cws_contact', 'Texte :', 'cws-contact', 'wysiwyg');
-
+    $this->addField('cws_contact_title_form', 'Titre :', 'cws-contact-form', 'text');
+    $this->addField('cws_contact_name', 'nom et prenom :', 'cws-contact-form', 'text');
+    $this->addField('cws_contact_email', 'Email :', 'cws-contact-form', 'text');
+    $this->addField('cws_contact_object', 'objet :', 'cws-contact-form', 'text'); 
+    $this->addField('cws_contact_msg', 'message :', 'cws-contact-form', 'text'); 
+    $this->addField('cws_contact_mail_reception', 'Email de reception :', 'cws-contact-form', 'text'); 
   }
 
   public static function get_id_by_slug($page_slug){

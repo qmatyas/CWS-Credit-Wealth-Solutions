@@ -11,7 +11,7 @@ cws.menuxs = {
       $(".dropdown-wealth").attr("href","wealth-section");
     } else {
       $("nav").addClass('navbar-xs');
-      $("<br>").insertBefore('.media-top');
+      $("<br>").insertBefore('.media-top'); 
       $(".dropdown-toggle").attr("data-toggle", "dropdown");
     }
   }
