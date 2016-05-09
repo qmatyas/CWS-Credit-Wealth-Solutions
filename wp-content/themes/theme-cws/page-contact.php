@@ -39,7 +39,7 @@ if(isset($_POST['message']) AND isset($_POST['email'])){
 <section class="section-formulaire">
 	<div class="container-fluid">
 		<div class="row">
-			<h2 class="block-title-contact"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_contact_title', true)); ?></h2>
+			<h2 class="block-title-contact"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_contact_title_form', true)); ?></h2>
 			<div class="col-md-12">
 				<?php if($form_send) : ?>
 					<div class="alert alert-success" role="alert">Merci de votre intérêt. Nous vous recontacterons très prochainement.</div>

@@ -5,9 +5,11 @@
 	<section class="section-slider">
 		<div class="container-fluid">	
 			<div class="row">
-				<div class="col-md-12 col-lg-12 slider single-item">
+				<!-- <div class="col-md-12 col-lg-12 slider single-item">
 					<div><img class="img-slider" src="<?php echo get_template_directory_uri(); ?>/assets/img/fond_slider1.png"></div>
-				</div>
+				</div> -->
+				<?php  $url_entreprises = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>
+			<div class="col-md-12 nopadding block-img-template"><img class="img-entreprise" src="<?php echo $url_entreprises?>"></div>
 			</div>
 		</div>		       
 	</section>
@@ -21,10 +23,13 @@
 					</p>
 				</div>
 				<div class="homepage-right col-md-5 col-md-offset-1">
-					<h2 class="block-title"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_intro_right_title', true)); ?></h2>
-					<p>
-						<?php echo nl2br(get_post_meta(get_the_ID(),'cws_intro_right', true)); ?>
-					</p>
+					<div class="homepage-filter"></div>
+					<div class="container-home-right">
+						<h2 class="block-title title-home-right"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_intro_right_title', true)); ?></h2>
+						<p>
+							<?php echo nl2br(get_post_meta(get_the_ID(),'cws_intro_right', true)); ?>
+						</p>
+					</div>					
 				</div>
 			</div>
 		</div>

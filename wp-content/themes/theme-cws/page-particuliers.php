@@ -10,17 +10,33 @@
 		<div class="row row-eq-height">
 			<div class="col-md-8 block-left">
 				<img class="arrow-title" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.png"><h2 class="block-title"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_top_title', true)); ?></h2>
-				<p class="text-left">
-					<?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_top', true)); ?>
-				</p>
+				<div class="text-left">
+					<p><?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_top', true)); ?></p>
+					<?php if(urlMultilang() == 'fr/' || urlMultilang() == '') : ?>
+					<div class="btn btn-danger btn-red"><a href="financement-projets-immobiliers">En savoir plus</a></div>
+					<?php elseif( urlMultilang() == 'en/') : ?>
+					<div class="btn btn-danger btn-red"><a href="estate-funding">More</a></div>
+					<?php endif; ?>
+				</div>
+				
 				<img class="arrow-title" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.png"><h2 class="block-title"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_middle_title', true)); ?></h2>
-				<p class="text-left">
-					<?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_middle', true)); ?>
-				</p>
+				<div class="text-left">
+					<p><?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_middle', true)); ?></p>
+					<?php if(urlMultilang() == 'fr/' || urlMultilang() == '') : ?>
+					<div class="btn btn-danger btn-red"><a href="gestion-actifs-financiers">En savoir plus</a></div>
+					<?php elseif( urlMultilang() == 'en/') : ?>
+					<div class="btn btn-danger btn-red"><a href="wealth-asset-management">More</a></div>
+					<?php endif; ?>
+				</div>
 				<img class="arrow-title" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.png"><h2 class="block-title"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_bottom_title', true)); ?></h2>
-				<p class="text-left-bottom">
-					<?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_bottom', true)); ?>
-				</p>
+				<div class="text-left-bottom">
+					<p><?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_bottom', true)); ?></p>
+					<?php if(urlMultilang() == 'fr/' || urlMultilang() == '') : ?>
+					<div class="btn btn-danger btn-red"><a href="constitution-dun-patrimoine-artistique">En savoir plus</a></div>
+					<?php elseif( urlMultilang() == 'en/') : ?>
+					<div class="btn btn-danger btn-red"><a href="investing-in-art">More</a></div>
+					<?php endif; ?>
+				</div>
 			</div>
 			<div class="col-md-4 bg-color contact-entreprise">
 				<h2 class="block-title-template"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_espace_patrimoine_title', true)); ?></h2>

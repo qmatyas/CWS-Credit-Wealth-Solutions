@@ -40,6 +40,16 @@ html {
    padding: 0 !important;
    margin: 0 !important;
 }
+.btn-red>a{
+    border: none;
+    color: #ffffff;
+}
+.btn-red:hover>a{
+    color: #ffffff!important;
+}
+.btn-red{
+    margin: 5px;
+}
 
 /*********************** Header **************************/
 .header-cws{
@@ -266,14 +276,40 @@ html {
     font-weight: bold;
 }
 .accueil-content{
-    /*border-top: solid 1px black;*/
+    position: relative;
 }
-.homepage-right, .homepage-left{
-    padding: 10px 0 30px;
+.homepage-filter{
+    position: absolute;
+    z-index: 1;
+    opacity: 0.45;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: black;
+}
+.single-item{
+    position: absolute;
+}
+.homepage-left, .homepage-right{
+    padding: 0 !important;
 }
 .homepage-right{
-    background-color: #ebe5e6;
-    /*border-left: solid 1px black;*/
+    /*background-color: #ebe5e6;*/
+    color: white;
+    background-image: url("assets/img/home-right.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.container-home-right{
+    position: relative;
+    z-index: 2;
+    margin-right: 0 10px;
+}
+.container-home-right>h2{
+    color: white !important;
+}
+.container-home-right>p{
+    margin: 0 15px;
 }
 .homepage-left>p, .homepage-right>p{
     margin-left: 15px;
@@ -402,7 +438,7 @@ html {
 }
 /**************** page entreprises *************/
 .text-left-bottom{
-    margin: 0 35px 20px;
+    margin: 0 35px;
 }
 .arrow-title-entreprise{
     width:23px;
