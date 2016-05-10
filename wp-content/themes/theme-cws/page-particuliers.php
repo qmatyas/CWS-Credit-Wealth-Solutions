@@ -9,33 +9,51 @@
 		</div>
 		<div class="row row-eq-height">
 			<div class="col-md-8 block-left">
-				<img class="arrow-title" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.png"><h2 class="block-title"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_top_title', true)); ?></h2>
+				<img class="arrow-title" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.png">
+				<h2 class="block-title link-title">
+					<?php if(urlMultilang() == 'fr/' || urlMultilang() == '') :?>
+						<a href="financement-projets-immobiliers">
+							<?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_top_title', true)); ?>
+						</a>
+					<?php elseif( urlMultilang() == 'en/') : ?>
+						<a href="estate-funding">
+							<?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_top_title', true)); ?>
+						</a>
+					<?php endif; ?>	
+				</h2>
 				<div class="text-left">
 					<p><?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_top', true)); ?></p>
-					<?php if(urlMultilang() == 'fr/' || urlMultilang() == '') : ?>
-					<div class="btn btn-danger btn-red"><a href="financement-projets-immobiliers">En savoir plus</a></div>
-					<?php elseif( urlMultilang() == 'en/') : ?>
-					<div class="btn btn-danger btn-red"><a href="estate-funding">More</a></div>
-					<?php endif; ?>
 				</div>
 				
-				<img class="arrow-title" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.png"><h2 class="block-title"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_middle_title', true)); ?></h2>
+				<img class="arrow-title-entreprise" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.png">
+				<h2 class="block-title link-title">
+					<?php if(urlMultilang() == 'fr/' || urlMultilang() == '') :?>
+						<a href="gestion-actifs-financiers">
+							<?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_middle_title', true)); ?>
+						</a>
+					<?php elseif( urlMultilang() == 'en/') : ?>
+						<a href="wealth-asset-management">
+							<?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_middle_title', true)); ?>
+						</a>
+					<?php endif; ?>
+				</h2>
 				<div class="text-left">
 					<p><?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_middle', true)); ?></p>
-					<?php if(urlMultilang() == 'fr/' || urlMultilang() == '') : ?>
-					<div class="btn btn-danger btn-red"><a href="gestion-actifs-financiers">En savoir plus</a></div>
-					<?php elseif( urlMultilang() == 'en/') : ?>
-					<div class="btn btn-danger btn-red"><a href="wealth-asset-management">More</a></div>
-					<?php endif; ?>
 				</div>
-				<img class="arrow-title" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.png"><h2 class="block-title"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_bottom_title', true)); ?></h2>
+				<img class="arrow-title-entreprise" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.png">
+				<h2 class="block-title link-title">
+					<?php if(urlMultilang() == 'fr/' || urlMultilang() == '') :?>
+						<a href="constitution-dun-patrimoine-artistique">
+							<?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_bottom_title', true)); ?>
+						</a>
+					<?php elseif( urlMultilang() == 'en/') : ?>
+						<a href="investing-in-art">
+							<?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_bottom_title', true)); ?>
+						</a>
+					<?php endif; ?>
+				</h2>
 				<div class="text-left-bottom">
 					<p><?php echo nl2br(get_post_meta(get_the_ID(),'cws_particuliers_bottom', true)); ?></p>
-					<?php if(urlMultilang() == 'fr/' || urlMultilang() == '') : ?>
-					<div class="btn btn-danger btn-red"><a href="constitution-dun-patrimoine-artistique">En savoir plus</a></div>
-					<?php elseif( urlMultilang() == 'en/') : ?>
-					<div class="btn btn-danger btn-red"><a href="investing-in-art">More</a></div>
-					<?php endif; ?>
 				</div>
 			</div>
 			<div class="col-md-4 bg-color contact-entreprise">

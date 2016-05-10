@@ -10,32 +10,50 @@
 		</div>
 		<div class="row row-eq-height">
 			<div class="col-md-8 block-left">
-				<img class="arrow-title" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.png"><h2 class="block-title"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_entreprises_top_title', true)); ?></h2>
+				<img class="arrow-title" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.png">
+				<h2 class="block-title link-title">
+					<?php if(urlMultilang() == 'fr/' || urlMultilang() == '') :?>
+					<a href="financement-complexe">
+						<?php echo nl2br(get_post_meta(get_the_ID(),'cws_entreprises_top_title', true)); ?>
+					</a>
+					<?php elseif( urlMultilang() == 'en/') : ?>
+					<a href="complex-financing">
+						<?php echo nl2br(get_post_meta(get_the_ID(),'cws_entreprises_top_title', true)); ?>
+					</a>
+					<?php endif; ?>
+				</h2>
 				<div class="text-left">
 					<p><?php echo nl2br(get_post_meta(get_the_ID(),'cws_entreprises_top', true)); ?></p>
-					<?php if(urlMultilang() == 'fr/' || urlMultilang() == '') : ?>
-					<div class="btn btn-danger btn-red"><a href="financement-complexe">En savoir plus</a></div>
-					<?php elseif( urlMultilang() == 'en/') : ?>
-					<div class="btn btn-danger btn-red"><a href="complex-financing">More</a></div>
-					<?php endif; ?>
 				</div>
-				<img class="arrow-title" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.png"><h2 class="block-title"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_entreprises_middle_title', true)); ?></h2>
+				<img class="arrow-title-entreprise" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.png">
+				<h2 class="block-title link-title">
+					<?php if(urlMultilang() == 'fr/' || urlMultilang() == '') :?>
+					<a href="gestion-actifs">
+						<?php echo nl2br(get_post_meta(get_the_ID(),'cws_entreprises_middle_title', true)); ?>
+					</a>
+					<?php elseif( urlMultilang() == 'en/') : ?>
+					<a href="asset-management">
+						<?php echo nl2br(get_post_meta(get_the_ID(),'cws_entreprises_middle_title', true)); ?>
+					</a>
+					<?php endif; ?>
+				</h2>
 				<div class="text-left">
 					<p><?php echo nl2br(get_post_meta(get_the_ID(),'cws_entreprises_middle', true)); ?></p>
-					<?php if(urlMultilang() == 'fr/' || urlMultilang() == '') : ?>
-					<div class="btn btn-danger btn-red"><a href="gestion-actifs">En savoir plus</a></div>
-					<?php elseif( urlMultilang() == 'en/') : ?>
-					<div class="btn btn-danger btn-red"><a href="asset-management">More</a></div>
-					<?php endif; ?>
 				</div>
-				<img class="arrow-title" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.png"><h2 class="block-title"><?php echo nl2br(get_post_meta(get_the_ID(),'cws_entreprises_bottom_title', true)); ?></h2>
+				<img class="arrow-title-entreprise" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.png">
+				<h2 class="block-title link-title">
+					<?php if(urlMultilang() == 'fr/' || urlMultilang() == '') :?>
+					<a href="banques-et-institutions-financieres">
+						<?php echo nl2br(get_post_meta(get_the_ID(),'cws_entreprises_bottom_title', true)); ?>
+					</a>
+					<?php elseif( urlMultilang() == 'en/') : ?>
+					<a href="banks-and-financial-institutions">
+						<?php echo nl2br(get_post_meta(get_the_ID(),'cws_entreprises_bottom_title', true)); ?>
+					</a>
+					<?php endif; ?>
+				</h2>
 				<div class="text-left-bottom">
 					<p><?php echo nl2br(get_post_meta(get_the_ID(),'cws_entreprises_bottom', true)); ?></p>
-					<?php if(urlMultilang() == 'fr/' || urlMultilang() == '') : ?>
-					<div class="btn btn-danger btn-red"><a href="banques-et-institutions-financieres">En savoir plus</a></div>
-					<?php elseif( urlMultilang() == 'en/') : ?>
-					<div class="btn btn-danger btn-red"><a href="banks-and-financial-institutions">More</a></div>
-					<?php endif; ?>
 				</div>
 			</div>
 			<div class="col-md-4 bg-color contact-entreprise">
